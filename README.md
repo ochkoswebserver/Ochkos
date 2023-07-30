@@ -7,14 +7,21 @@ The server administration software for your needs. Developed by experienced serv
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
 # Installation
-Fast install
 
-    Ensure that your webserver serves /var/www/html
-    Extract ochkos into /var/www/html
-    Point your browser to http://[ip-of-webserver]/froxlor
-    Follow the installer
-    Login as administrator
-    Have fun!
+Be sure you have allready installed python into you system Python 3.X version.
+
+### Fast install
+
+### For Debian/Ubuntu-based systems install tkinter:
+    sudo apt-get install python3-tk python3-dev
+
+### Install pyautogui to run the web-server:
+    pip install pyautogui
+
+### Run the script and follow the instructions:
+    python3 ochkos-web-server.py
+    
+    
 
 If you have chosen to do the configuration by hand during the installation, you have to complete some more steps:
 
