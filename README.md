@@ -2,7 +2,7 @@
 The server administration software for your needs. Developed by experienced server administrators, this panel simplifies the effort of managing your hosting platform.
 
 
-#Installation
+# Installation
 Fast install
 
 
@@ -20,7 +20,7 @@ If you have chosen to do the configuration by hand during the installation, you 
     Choose your distribution under "System > Configuration"
     Follow the steps for your services
 
-#Detailed installation
+# Detailed installation
 
 https://docs.ochkos.org/latest/general/installation/
 Help
