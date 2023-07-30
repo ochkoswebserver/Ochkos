@@ -1,11 +1,13 @@
 # Ochkos
-The server administration software for your needs. Developed by experienced server administrators, this panel simplifies the effort of managing your hosting platform.
+The server administration software for your needs. Developed by experienced server administrators, this panel simplifies the effort of managing your hosting platform. 
 
+
+# 💻 Tech Stack:
+![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Sever-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![LINUX](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Webflow](https://img.shields.io/badge/Webflow-4353FF?style=for-the-badge&logo=webflow&logoColor=white) ![Confluence](https://img.shields.io/badge/confluence-%23172BF4.svg?style=for-the-badge&logo=confluence&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
 # Installation
 Fast install
-
-
 
     Ensure that your webserver serves /var/www/html
     Extract ochkos into /var/www/html
@@ -59,4 +61,9 @@ Ubuntu
     apt-get -y install apt-transport-https lsb-release ca-certificates curl
     curl -sSLo /usr/share/keyrings/deb.froxlor.org-froxlor.gpg https://deb.froxlor.org/froxlor.gpg
     echo sh -c '"deb [signed-by=/usr/share/keyrings/deb.ochkos.org-ochkos.gpg] https://deb.ochkos.org/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ochkos.list'
+
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=ochkoswebserver&theme=synthwave&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=ochkoswebserver&theme=synthwave&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=ochkoswebserver&theme=synthwave&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
