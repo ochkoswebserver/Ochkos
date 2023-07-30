@@ -49,14 +49,14 @@ Debian / Ubuntu repository
 
 HowTo
 Debian
-
-apt-get -y install apt-transport-https lsb-release ca-certificates curl
-curl -sSLo /usr/share/keyrings/deb.froxlor.org-froxlor.gpg https://deb.froxlor.org/froxlor.gpg
-echo sh -c '"deb [signed-by=/usr/share/keyrings/deb.froxlor.org-froxlor.gpg] https://deb.froxlor.org/debian $(lsb_release -sc) main" > /etc/apt/sources.list.d/froxlor.list'
+    
+    apt-get -y install apt-transport-https lsb-release ca-certificates curl
+    curl -sSLo /usr/share/keyrings/deb.froxlor.org-froxlor.gpg https://deb.froxlor.org/froxlor.gpg
+    echo sh -c '"deb [signed-by=/usr/share/keyrings/deb.froxlor.org-froxlor.gpg] https://deb.froxlor.org/debian $(lsb_release -sc) main" > /etc/apt/sources.list.d/froxlor.list'
 
 Ubuntu
 
-apt-get -y install apt-transport-https lsb-release ca-certificates curl
-curl -sSLo /usr/share/keyrings/deb.froxlor.org-froxlor.gpg https://deb.froxlor.org/froxlor.gpg
-echo sh -c '"deb [signed-by=/usr/share/keyrings/deb.ochkos.org-ochkos.gpg] https://deb.ochkos.org/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ochkos.list'
+    apt-get -y install apt-transport-https lsb-release ca-certificates curl
+    curl -sSLo /usr/share/keyrings/deb.froxlor.org-froxlor.gpg https://deb.froxlor.org/froxlor.gpg
+    echo sh -c '"deb [signed-by=/usr/share/keyrings/deb.ochkos.org-ochkos.gpg] https://deb.ochkos.org/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ochkos.list'
 
