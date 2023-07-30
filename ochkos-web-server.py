@@ -1,6 +1,8 @@
 import sys
 import os
 import time
+import pyautogui
+import math
 
 class AsciiArt:
     def print_banner(self):
@@ -19,18 +21,16 @@ class AsciiArt:
         print(response)
 
     def move_mouse_to_center(self):
-        screen_width, screen_height = pyautogui.size()
-        target_x = screen_width // 2
-        target_y = screen_height // 2
-        pyautogui.moveTo(target_x, target_y, duration=1)
-
-    def install_package(self, package_name):
-        try:
-            importlib.import_module(package_name)
-        except ImportError:
-            import subprocess
-            import sys
-            subprocess.check_call([sys.executable, "-m", "pip", "install", package_name])
+        # Circular mouse movement
+        while True:  # Infinite loop for continuous circular motion
+            R = 400
+            (x, y) = pyautogui.size()
+            (X, Y) = pyautogui.position(x // 2, y // 2)
+            
+            for i in range(360):
+                if i % 6 == 0:
+                    pyautogui.moveTo(X + R * math.cos(math.radians(i)), Y + R * math.sin(math.radians(i)))
+                    time.sleep(0.05)  # Optional: Add a small delay between 
 
     def ask_question(self, question, response):
         user_response = input(f"{question} (yes/no)?: ").lower()
@@ -102,5 +102,6 @@ U  /"\  u
 """)
     ]
 
-    if all(ascii_art.ask_question(q, r) for q, r in questions_responses):
+if all(ascii_art.ask_question(q, r) for q, r in questions_responses):
         print("Muslim ti ebala :D")
+        ascii_art.move_mouse_to_center()
